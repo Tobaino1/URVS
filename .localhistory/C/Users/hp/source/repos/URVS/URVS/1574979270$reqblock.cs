@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-
 
 namespace URVS
 {
@@ -121,46 +119,10 @@ namespace URVS
             }
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + listBox1 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + listBox2 + "', '" + listBox3 + "', '" + listBox4 + "'  )", con);
-            cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
-            cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
-            cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
-            cmd.Parameters.Add("listBox4", MySqlDbType.VarChar, 255);
-
-            foreach (string item in listBox1.Items)
-            {
-                cmd.Parameters["listbox1"].Value = item;
-                cmd.ExecuteNonQuery();
-
-            }
-            foreach (string item in listBox1.Items)
-            {
-                cmd.Parameters["listbox2"].Value = item;
-                cmd.ExecuteNonQuery();
-
-            }
-            foreach (string item in listBox1.Items)
-            {
-                cmd.Parameters["listbox3"].Value = item;
-                cmd.ExecuteNonQuery();
-
-            }
-            foreach (string item in listBox1.Items)
-            {
-                cmd.Parameters["listbox4"].Value = item;
-                cmd.ExecuteNonQuery();
-
-            }
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`tester`, `date`, `app_name`, `requirements`) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "', '" + textBox4.Text + "')", con);
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Requirements has been succesfully inserted in the database, click refresh button");
+            MessageBox.Show("user story has been succesfully inserted in the database, click refresh button");
             con.Close();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            dashboard myform = new dashboard ();
-            this.Hide();
-            myform.Show();
         }
     }
 }

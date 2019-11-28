@@ -21,14 +21,5 @@ namespace URVS
         {
             Application.Exit();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-       
-            Reqblock myform = new Reqblock();
-            this.Hide();
-            myform.Show();
-
-        }
     }
 }

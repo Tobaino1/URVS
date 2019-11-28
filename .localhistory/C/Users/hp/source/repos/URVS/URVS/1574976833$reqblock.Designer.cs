@@ -70,19 +70,12 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -122,7 +115,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel3);
@@ -142,11 +134,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(840, 445);
+            this.button1.Location = new System.Drawing.Point(1004, 451);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 43);
+            this.button1.Size = new System.Drawing.Size(98, 36);
             this.button1.TabIndex = 41;
-            this.button1.Text = "GENERATE REPORTS";
+            this.button1.Text = "Help";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -206,13 +198,12 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(351, 435);
+            this.button3.Location = new System.Drawing.Point(478, 435);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 46);
+            this.button3.Size = new System.Drawing.Size(78, 32);
             this.button3.TabIndex = 13;
-            this.button3.Text = "&SAVE REQUIREMENTS";
+            this.button3.Text = "&Save New";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
@@ -248,18 +239,12 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.OliveDrab;
-            this.groupBox5.Controls.Add(this.listBox4);
-            this.groupBox5.Controls.Add(this.listBox3);
-            this.groupBox5.Controls.Add(this.listBox2);
-            this.groupBox5.Controls.Add(this.textBox11);
-            this.groupBox5.Controls.Add(this.textBox10);
-            this.groupBox5.Controls.Add(this.textBox9);
-            this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Controls.Add(this.label22);
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.textBox12);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label13);
@@ -286,7 +271,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(9, 273);
+            this.label12.Location = new System.Drawing.Point(9, 256);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 13);
             this.label12.TabIndex = 6;
@@ -298,14 +283,15 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(9, 313);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.Size = new System.Drawing.Size(76, 13);
             this.label13.TabIndex = 4;
+            this.label13.Text = "Deployment";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(9, 238);
+            this.label14.Location = new System.Drawing.Point(9, 226);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(115, 13);
             this.label14.TabIndex = 4;
@@ -576,11 +562,21 @@
             this.label17.TabIndex = 12;
             this.label17.Text = "Prior Business Problems related to the Area / Application";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(9, 194);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(160, 13);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "Configuration / Installation";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(9, 303);
+            this.label19.Location = new System.Drawing.Point(9, 284);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(69, 13);
             this.label19.TabIndex = 8;
@@ -590,7 +586,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(8, 97);
+            this.label20.Location = new System.Drawing.Point(8, 92);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(294, 13);
             this.label20.TabIndex = 9;
@@ -600,7 +596,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(9, 155);
+            this.label21.Location = new System.Drawing.Point(9, 127);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(159, 13);
             this.label21.TabIndex = 10;
@@ -610,7 +606,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(9, 196);
+            this.label22.Location = new System.Drawing.Point(9, 160);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(129, 13);
             this.label22.TabIndex = 11;
@@ -620,97 +616,11 @@
             // 
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(8, 48);
+            this.label23.Location = new System.Drawing.Point(8, 49);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(392, 13);
             this.label23.TabIndex = 12;
             this.label23.Text = "FRAMEWORK for Programming Lang(s) Eg Django, .NET framework";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(11, 64);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(389, 30);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(11, 113);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(389, 30);
-            this.textBox9.TabIndex = 14;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(174, 149);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(226, 30);
-            this.textBox10.TabIndex = 15;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(174, 185);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(226, 30);
-            this.textBox11.TabIndex = 16;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
-            "WEB",
-            "DESKTOP",
-            "CONSOLE",
-            "MOBILE",
-            "HYBRID"});
-            this.listBox2.Location = new System.Drawing.Point(174, 221);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(154, 30);
-            this.listBox2.TabIndex = 17;
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Items.AddRange(new object[] {
-            "OPEN-SOURCE",
-            "PAID",
-            "TRIAL"});
-            this.listBox3.Location = new System.Drawing.Point(174, 256);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(154, 30);
-            this.listBox3.TabIndex = 18;
-            // 
-            // listBox4
-            // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Items.AddRange(new object[] {
-            "24/7",
-            "WEEKLY",
-            "DAILY",
-            "MONTHLY",
-            "YEARLY"});
-            this.listBox4.Location = new System.Drawing.Point(174, 293);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(154, 30);
-            this.listBox4.TabIndex = 19;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(64, 445);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(152, 43);
-            this.button5.TabIndex = 42;
-            this.button5.Text = "DASHBOARD";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Reqblock
             // 
@@ -793,13 +703,6 @@
         internal System.Windows.Forms.Label label21;
         internal System.Windows.Forms.Label label20;
         internal System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox2;
-        internal System.Windows.Forms.TextBox textBox11;
-        internal System.Windows.Forms.TextBox textBox10;
-        internal System.Windows.Forms.TextBox textBox9;
-        internal System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button5;
+        internal System.Windows.Forms.Label label18;
     }
 }

@@ -82,7 +82,6 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -122,7 +121,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel3);
@@ -702,16 +700,6 @@
             this.listBox4.Size = new System.Drawing.Size(154, 30);
             this.listBox4.TabIndex = 19;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(64, 445);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(152, 43);
-            this.button5.TabIndex = 42;
-            this.button5.Text = "DASHBOARD";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // Reqblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -800,6 +788,5 @@
         internal System.Windows.Forms.TextBox textBox10;
         internal System.Windows.Forms.TextBox textBox9;
         internal System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button5;
     }
 }

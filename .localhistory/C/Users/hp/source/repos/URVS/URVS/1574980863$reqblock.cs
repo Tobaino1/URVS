@@ -155,12 +155,5 @@ namespace URVS
             MessageBox.Show("Requirements has been succesfully inserted in the database, click refresh button");
             con.Close();
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            dashboard myform = new dashboard ();
-            this.Hide();
-            myform.Show();
-        }
     }
 }
