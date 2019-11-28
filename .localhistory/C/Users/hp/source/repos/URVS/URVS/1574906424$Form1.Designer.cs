@@ -106,7 +106,7 @@
             this.button2.Text = "    Cancel";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -135,7 +135,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "   Enter";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -168,7 +168,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "       Exit";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -178,7 +178,7 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 

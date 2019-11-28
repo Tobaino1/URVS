@@ -27,7 +27,7 @@ namespace URVS
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == string.Empty)
             {
@@ -67,21 +67,10 @@ namespace URVS
 
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
             textBox2.Text = "";
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            MessageBoxIcon.Information.Equals("try to");
-
         }
     }
 }

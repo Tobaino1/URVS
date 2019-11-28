@@ -82,9 +82,9 @@
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.groupBox1.Location = new System.Drawing.Point(88, 63);
+            this.groupBox1.Location = new System.Drawing.Point(88, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(840, 459);
+            this.groupBox1.Size = new System.Drawing.Size(840, 430);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu Links";
@@ -172,7 +172,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(255, 305);
+            this.dateTimePicker1.Location = new System.Drawing.Point(254, 341);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(310, 26);
             this.dateTimePicker1.TabIndex = 17;
@@ -188,7 +188,7 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "       Exit";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dashboard
             // 

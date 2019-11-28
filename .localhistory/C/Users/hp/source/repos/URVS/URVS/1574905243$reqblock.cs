@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace URVS
 {
-    public partial class dashboard : Form
+    public partial class reqblock : Form
     {
-        public dashboard()
+        public reqblock()
         {
             InitializeComponent();
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
