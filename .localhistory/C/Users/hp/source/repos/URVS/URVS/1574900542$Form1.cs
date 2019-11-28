@@ -58,7 +58,7 @@ namespace URVS
             else
             {
                 MessageBox.Show("Correct User Login details!");
-                dashboard myform = new dashboard();
+                Form2 myform = new Form2();
                 this.Hide();
                 myform.Show();
             }

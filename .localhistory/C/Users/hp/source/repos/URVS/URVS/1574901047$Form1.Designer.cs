@@ -75,9 +75,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(501, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(479, 103);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(179, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -108,7 +108,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(64, 113);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 26);
+            this.textBox1.Size = new System.Drawing.Size(295, 26);
             this.textBox1.TabIndex = 12;
             // 
             // label3
@@ -138,7 +138,7 @@
             this.textBox2.Location = new System.Drawing.Point(62, 189);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(365, 26);
+            this.textBox2.Size = new System.Drawing.Size(295, 26);
             this.textBox2.TabIndex = 13;
             // 
             // label4
