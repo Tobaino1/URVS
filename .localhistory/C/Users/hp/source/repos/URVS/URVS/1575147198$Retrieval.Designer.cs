@@ -31,19 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Retrieval));
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +59,6 @@
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,7 +79,6 @@
             this.label1.Size = new System.Drawing.Size(189, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "RETRIEVAL MODULE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -93,17 +90,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(427, 55);
             this.panel2.TabIndex = 28;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(56, 19);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(331, 15);
-            this.label18.TabIndex = 44;
-            this.label18.Text = "Probable quality assurance (%) && Assumed Validation Report";
             // 
             // picClose
             // 
@@ -126,6 +112,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(45, 44);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(56, 19);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(331, 15);
+            this.label18.TabIndex = 44;
+            this.label18.Text = "Probable quality assurance (%) && Assumed Validation Report";
             // 
             // panel1
             // 
@@ -182,7 +179,30 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(427, 428);
             this.dataGridView1.TabIndex = 46;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column15,
+            this.Column16,
+            this.Column17});
+            this.dataGridView2.Location = new System.Drawing.Point(492, 112);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(745, 428);
+            this.dataGridView2.TabIndex = 47;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // Column3
             // 
@@ -201,53 +221,20 @@
             this.Column2.Name = "Column2";
             this.Column2.Width = 500;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column18,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14,
-            this.Column15,
-            this.Column16,
-            this.Column17});
-            this.dataGridView2.Location = new System.Drawing.Point(492, 112);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(655, 428);
-            this.dataGridView2.TabIndex = 47;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // Column18
-            // 
-            this.Column18.HeaderText = "Date";
-            this.Column18.Name = "Column18";
-            // 
             // Column4
             // 
             this.Column4.HeaderText = "Client Name";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 300;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Application Name";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 300;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "User Requirements (specifications)";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 500;
             // 
             // Column7
             // 
@@ -263,19 +250,16 @@
             // 
             this.Column9.HeaderText = "Business Area of the Application";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 200;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Business needs (projected vision)";
             this.Column10.Name = "Column10";
-            this.Column10.Width = 400;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Prior Business Problems";
             this.Column11.Name = "Column11";
-            this.Column11.Width = 400;
             // 
             // Column12
             // 
@@ -329,23 +313,12 @@
             this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
     "ed 2019";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(756, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 29);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "REPORTS ON REQUIREMENTS ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Retrieval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1252, 603);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
@@ -387,10 +360,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
@@ -405,5 +374,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label16;
     }
 }

@@ -43,22 +43,22 @@ namespace URVS
                     int m = dataGridView2.Rows.Add();
                     dataGridView2.Rows[m].Cells[0].Value = tem["submit"].ToString();
                     dataGridView2.Rows[m].Cells[1].Value = tem["client_name"].ToString();
-                    dataGridView2.Rows[m].Cells[2].Value = tem["app_name"].ToString();
-                    dataGridView2.Rows[m].Cells[3].Value = tem["user_spec"].ToString();
-                    dataGridView2.Rows[m].Cells[4].Value = tem["timeline"].ToString();
-                    dataGridView2.Rows[m].Cells[5].Value = tem["probable_cost"].ToString();
-                    dataGridView2.Rows[m].Cells[6].Value = tem["bus_area"].ToString();
-                    dataGridView2.Rows[m].Cells[7].Value = tem["project_vision"].ToString();
-                    dataGridView2.Rows[m].Cells[8].Value = tem["prior_busprob"].ToString();
-                    dataGridView2.Rows[m].Cells[9].Value = tem["dev_name"].ToString();
-                    dataGridView2.Rows[m].Cells[10].Value = tem["framework"].ToString();
-                    dataGridView2.Rows[m].Cells[11].Value = tem["resource_con"].ToString();
-                    dataGridView2.Rows[m].Cells[12].Value = tem["prog_lang"].ToString();
-                    dataGridView2.Rows[m].Cells[13].Value = tem["db"].ToString();
-                    dataGridView2.Rows[m].Cells[14].Value = tem["app_type"].ToString();
-                    dataGridView2.Rows[m].Cells[15].Value = tem["accessibility"].ToString();
-                    dataGridView2.Rows[m].Cells[16].Value = tem["availability"].ToString();
-                    //dataGridView2.Rows[m].Cells[17].Value = tem["id"].ToString();
+                    dataGridView2.Rows[m].Cells[2].Value = item["app_name"].ToString();
+                    dataGridView2.Rows[m].Cells[3].Value = item["user_spec"].ToString();
+                    dataGridView2.Rows[m].Cells[4].Value = item["timeline"].ToString();
+                    dataGridView2.Rows[m].Cells[5].Value = item["probable_cost"].ToString();
+                    dataGridView2.Rows[m].Cells[6].Value = item["bus_area"].ToString();
+                    dataGridView2.Rows[m].Cells[7].Value = item["project_vision"].ToString();
+                    dataGridView2.Rows[m].Cells[8].Value = item["prior_busprob"].ToString();
+                    dataGridView2.Rows[m].Cells[9].Value = item["dev_name"].ToString();
+                    dataGridView2.Rows[m].Cells[10].Value = item["framework"].ToString();
+                    dataGridView2.Rows[m].Cells[11].Value = item["resource_con"].ToString();
+                    dataGridView2.Rows[m].Cells[12].Value = item["prog_lang"].ToString();
+                    dataGridView2.Rows[m].Cells[13].Value = item["db"].ToString();
+                    dataGridView2.Rows[m].Cells[14].Value = item["app_type"].ToString();
+                    dataGridView2.Rows[m].Cells[15].Value = item["accessibility"].ToString();
+                    dataGridView2.Rows[m].Cells[16].Value = item["availability"].ToString();
+                    //dataGridView2.Rows[n].Cells[17].Value = item["id"].ToString();
 
                 }
             }

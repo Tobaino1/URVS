@@ -33,9 +33,7 @@ namespace URVS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Retrieval myform = new Retrieval();
-            this.Hide();
-            myform.Show();
+
         }
     }
 }

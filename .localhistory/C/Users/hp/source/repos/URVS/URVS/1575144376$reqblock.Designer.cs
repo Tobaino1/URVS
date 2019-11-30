@@ -90,7 +90,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -130,7 +129,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button8);
@@ -151,7 +149,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1275, 622);
+            this.groupBox1.Size = new System.Drawing.Size(1275, 598);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Requirements Block";
@@ -218,7 +216,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(638, 441);
+            this.label24.Location = new System.Drawing.Point(638, 450);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(182, 18);
             this.label24.TabIndex = 45;
@@ -227,7 +225,7 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(641, 463);
+            this.textBox14.Location = new System.Drawing.Point(641, 472);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(337, 115);
@@ -238,7 +236,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(638, 417);
+            this.label18.Location = new System.Drawing.Point(638, 426);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(210, 18);
             this.label18.TabIndex = 43;
@@ -247,7 +245,7 @@
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(850, 417);
+            this.textBox13.Location = new System.Drawing.Point(850, 426);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(115, 25);
@@ -811,26 +809,19 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(363, 668);
+            this.label16.Location = new System.Drawing.Point(363, 644);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(545, 16);
             this.label16.TabIndex = 41;
             this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
     "ed 2019";
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(644, 589);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(334, 15);
-            this.progressBar1.TabIndex = 51;
-            // 
             // Reqblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1292, 697);
+            this.ClientSize = new System.Drawing.Size(1292, 669);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -923,6 +914,5 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

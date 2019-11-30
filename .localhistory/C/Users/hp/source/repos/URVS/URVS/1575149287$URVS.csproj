@@ -62,11 +62,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report_req.cs">
+    <Compile Include="report_req.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report_req.Designer.cs">
-      <DependentUpon>Report_req.cs</DependentUpon>
+    <Compile Include="report_req.Designer.cs">
+      <DependentUpon>report_req.cs</DependentUpon>
     </Compile>
     <Compile Include="reqblock.cs">
       <SubType>Form</SubType>
@@ -96,8 +96,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report_req.resx">
-      <DependentUpon>Report_req.cs</DependentUpon>
+    <EmbeddedResource Include="report_req.resx">
+      <DependentUpon>report_req.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reqblock.resx">
       <DependentUpon>reqblock.cs</DependentUpon>
