@@ -32,10 +32,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -90,6 +86,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -129,7 +128,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button7);
@@ -153,70 +151,13 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Requirements Block";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.PowderBlue;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button5.Location = new System.Drawing.Point(226, 528);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(193, 46);
-            this.button5.TabIndex = 50;
-            this.button5.Text = "&REFRESH";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.PowderBlue;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button6.Location = new System.Drawing.Point(14, 457);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(193, 46);
-            this.button6.TabIndex = 49;
-            this.button6.Text = "&DASHBOARD";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(1056, 437);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(199, 43);
-            this.button8.TabIndex = 48;
-            this.button8.Text = "HELP ON NaN";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(1056, 535);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(199, 43);
-            this.button7.TabIndex = 47;
-            this.button7.Text = "SAVE REPORTS && PROBBLE  QUALITY ASSURANCE";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(638, 450);
+            this.label24.Location = new System.Drawing.Point(751, 450);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(182, 18);
             this.label24.TabIndex = 45;
@@ -225,7 +166,7 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(641, 472);
+            this.textBox14.Location = new System.Drawing.Point(754, 472);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(337, 115);
@@ -236,7 +177,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(638, 426);
+            this.label18.Location = new System.Drawing.Point(751, 426);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(210, 18);
             this.label18.TabIndex = 43;
@@ -245,7 +186,7 @@
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(850, 426);
+            this.textBox13.Location = new System.Drawing.Point(963, 426);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(115, 25);
@@ -253,13 +194,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(1056, 486);
+            this.button1.Location = new System.Drawing.Point(1103, 486);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 43);
+            this.button1.Size = new System.Drawing.Size(152, 43);
             this.button1.TabIndex = 41;
             this.button1.Text = "GENERATE REPORTS";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
@@ -271,13 +211,12 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(14, 528);
+            this.button2.Location = new System.Drawing.Point(14, 540);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(193, 47);
             this.button2.TabIndex = 16;
             this.button2.Text = "&ERASE FIELDS";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -319,7 +258,7 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(226, 452);
+            this.button3.Location = new System.Drawing.Point(14, 483);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(193, 46);
             this.button3.TabIndex = 13;
@@ -816,6 +755,42 @@
             this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
     "ed 2019";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1103, 535);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(152, 43);
+            this.button7.TabIndex = 47;
+            this.button7.Text = "SAVE REPORTS & PROBBLE  QUALITY ASSURANCE";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(1103, 437);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(152, 43);
+            this.button8.TabIndex = 48;
+            this.button8.Text = "HELP ON NaN";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.PowderBlue;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
+            this.button6.Location = new System.Drawing.Point(14, 431);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(193, 46);
+            this.button6.TabIndex = 49;
+            this.button6.Text = "&DASHBOARD";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
             // Reqblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -828,7 +803,6 @@
             this.Controls.Add(this.button4);
             this.Name = "Reqblock";
             this.Text = "requirementsblock";
-            this.Load += new System.EventHandler(this.Reqblock_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -913,6 +887,5 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
     }
 }

@@ -263,15 +263,5 @@ namespace URVS
             this.Hide();
             myform.Show();
         }
-
-        private void Reqblock_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

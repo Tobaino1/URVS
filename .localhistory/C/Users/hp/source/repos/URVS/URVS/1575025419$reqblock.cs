@@ -256,22 +256,5 @@ namespace URVS
             MessageBox.Show("Generated Reports has been succesfully saved in the database, click refresh button");
             con.Close();
         }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            Reqblock myform = new Reqblock();
-            this.Hide();
-            myform.Show();
-        }
-
-        private void Reqblock_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

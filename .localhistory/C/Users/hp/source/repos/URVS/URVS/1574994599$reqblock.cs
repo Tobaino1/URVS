@@ -49,12 +49,11 @@ namespace URVS
 
             double.TryParse(textBox8.Text, out timeline);
             double.TryParse(textBox7.Text, out probable_cost);
-            double.TryParse(textBox12.Text, out effort);
+            double.TryParse(textBox8.Text, out effort);
 
-            result = probable_cost / (effort * timeline * 100);
-            textBox13.Text = result.ToString();
+            result = probable_cost / effort * timeline * 100;
 
-            //--------------------Applying Bayes Theorem to validate ---------------------//
+            //Applying Bayes validate
             //P(A|B) Posterior --validation based on the probability that user gave right requirements (specifications) and developer adhere to it
             // **
             //p(B|A) Likelihood -- validation based on the probability that developer complied given that the user gave right requirements
@@ -63,18 +62,12 @@ namespace URVS
             //**
             //P(B)  -- Validation based on probability by observing evidence from the likelihood || developer developed the system
 
-            if (textBox4.Text == "" & textBox2.Text == "" & textBox9.Text == "")
-            {
 
-                string validation_report = string.Empty;
 
-                validation_report = " POSTERIOR P(A|B) OR P(A) = Validation based on the probability that User gave right requirements (specifications) OR requirements on hypothesis without prior information  && LIKELIHOOD P(B|A) OR P(B)  Validation based on the probability that developer complied and developed OR development based on the probability of observing evidence from the likelihood";
-                textBox14.Text = validation_report.ToString();
- 
-            }                  
+
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == string.Empty)
             {
@@ -186,90 +179,14 @@ namespace URVS
             con.Close();
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             dashboard myform = new dashboard ();
             this.Hide();
             myform.Show();
         }
 
-        private void Label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("If there's NaN as probable quality result then the validator is not receiving POSTERIOR P(A|B) OR P(A) && LIKELIHOOD P(B|A) OR P(B) , Please enter probable / assumed value in Numeric form inorder to get validation requirements report!");
-            return;
-        }
-
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            dashboard myform = new dashboard();
-            this.Hide();
-            myform.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox8.Text = "";
-            textBox7.Text = ""; 
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox12.Text = "";
-            textBox2.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            if (textBox13.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please carry out validation process to generate  value!");
-                return;
-
-            }
-            if (textBox14.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please carry out validation process to generate  value!");
-                return;
-
-            }
-
-           
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO reports (`prob_qua_ass`, `ass_val_rep`) VALUES ('" + textBox13.Text + "','" + textBox14.Text + "')", con);
-                        
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Generated Reports has been succesfully saved in the database, click refresh button");
-            con.Close();
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            Reqblock myform = new Reqblock();
-            this.Hide();
-            myform.Show();
-        }
-
-        private void Reqblock_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
