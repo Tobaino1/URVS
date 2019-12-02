@@ -90,16 +90,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -110,8 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -141,16 +130,19 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.groupBox6);
-            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.textBox13);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.panel1);
@@ -159,7 +151,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1275, 678);
+            this.groupBox1.Size = new System.Drawing.Size(1275, 622);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Requirements Block";
@@ -174,9 +166,9 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button5.Location = new System.Drawing.Point(425, 547);
+            this.button5.Location = new System.Drawing.Point(226, 528);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 46);
+            this.button5.Size = new System.Drawing.Size(193, 46);
             this.button5.TabIndex = 50;
             this.button5.Text = "&REFRESH";
             this.button5.UseVisualStyleBackColor = false;
@@ -191,9 +183,9 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button6.Location = new System.Drawing.Point(425, 492);
+            this.button6.Location = new System.Drawing.Point(14, 457);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(129, 46);
+            this.button6.Size = new System.Drawing.Size(193, 46);
             this.button6.TabIndex = 49;
             this.button6.Text = "&DASHBOARD";
             this.button6.UseVisualStyleBackColor = false;
@@ -202,7 +194,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(586, 471);
+            this.button8.Location = new System.Drawing.Point(1056, 437);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(199, 43);
             this.button8.TabIndex = 48;
@@ -213,7 +205,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(586, 569);
+            this.button7.Location = new System.Drawing.Point(1056, 535);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(199, 43);
             this.button7.TabIndex = 47;
@@ -226,7 +218,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(15, 87);
+            this.label24.Location = new System.Drawing.Point(638, 441);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(182, 18);
             this.label24.TabIndex = 45;
@@ -235,10 +227,10 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(18, 111);
+            this.textBox14.Location = new System.Drawing.Point(641, 463);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(358, 115);
+            this.textBox14.Size = new System.Drawing.Size(337, 115);
             this.textBox14.TabIndex = 44;
             // 
             // label18
@@ -246,7 +238,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(15, 19);
+            this.label18.Location = new System.Drawing.Point(638, 417);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(210, 18);
             this.label18.TabIndex = 43;
@@ -255,7 +247,7 @@
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Location = new System.Drawing.Point(261, 8);
+            this.textBox13.Location = new System.Drawing.Point(850, 417);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(115, 25);
@@ -264,7 +256,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(586, 520);
+            this.button1.Location = new System.Drawing.Point(1056, 486);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 43);
             this.button1.TabIndex = 41;
@@ -281,9 +273,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(290, 547);
+            this.button2.Location = new System.Drawing.Point(14, 528);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 47);
+            this.button2.Size = new System.Drawing.Size(193, 47);
             this.button2.TabIndex = 16;
             this.button2.Text = "&ERASE FIELDS";
             this.button2.UseVisualStyleBackColor = false;
@@ -329,9 +321,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(290, 492);
+            this.button3.Location = new System.Drawing.Point(226, 452);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 46);
+            this.button3.Size = new System.Drawing.Size(193, 46);
             this.button3.TabIndex = 13;
             this.button3.Text = "&SAVE REQUIREMENTS";
             this.button3.UseVisualStyleBackColor = false;
@@ -716,9 +708,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(11, 55);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(295, 13);
+            this.label9.Size = new System.Drawing.Size(299, 13);
             this.label9.TabIndex = 4;
-            this.label9.Text = "Probable cost of development (Budget) Eg 100000";
+            this.label9.Text = "Probable cost of development (Budget) Eg 100,000";
             // 
             // label10
             // 
@@ -757,7 +749,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(386, 160);
             this.textBox4.TabIndex = 9;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -820,134 +811,26 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(363, 724);
+            this.label16.Location = new System.Drawing.Point(363, 668);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(545, 16);
             this.label16.TabIndex = 41;
             this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
     "ed 2019";
             // 
-            // textBox15
+            // progressBar1
             // 
-            this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.Location = new System.Drawing.Point(100, 55);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(51, 25);
-            this.textBox15.TabIndex = 52;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.Location = new System.Drawing.Point(100, 105);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(51, 25);
-            this.textBox16.TabIndex = 53;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.Location = new System.Drawing.Point(100, 153);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(51, 25);
-            this.textBox17.TabIndex = 54;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label25.Location = new System.Drawing.Point(6, 55);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(79, 18);
-            this.label25.TabIndex = 55;
-            this.label25.Text = "Likelihood";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label26.Location = new System.Drawing.Point(6, 104);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(41, 18);
-            this.label26.TabIndex = 56;
-            this.label26.Text = "P(A)";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(6, 160);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 18);
-            this.label27.TabIndex = 57;
-            this.label27.Text = "P(B)";
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.Location = new System.Drawing.Point(261, 54);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(115, 25);
-            this.textBox18.TabIndex = 58;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label28.Location = new System.Drawing.Point(15, 54);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(240, 18);
-            this.label28.TabIndex = 59;
-            this.label28.Text = "Curated Validation  outcome (score)";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.label28);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Location = new System.Drawing.Point(810, 441);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(420, 231);
-            this.groupBox2.TabIndex = 60;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RESULT SECTION";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.textBox15);
-            this.groupBox6.Controls.Add(this.label27);
-            this.groupBox6.Controls.Add(this.textBox16);
-            this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Controls.Add(this.textBox17);
-            this.groupBox6.Location = new System.Drawing.Point(25, 441);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(243, 188);
-            this.groupBox6.TabIndex = 61;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Enter Actual / Assumed value for the following Parameters (click HELP button for " +
-    "more info on the parameters)";
+            this.progressBar1.Location = new System.Drawing.Point(644, 589);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(334, 15);
+            this.progressBar1.TabIndex = 51;
             // 
             // Reqblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1320, 749);
+            this.ClientSize = new System.Drawing.Size(1292, 697);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -956,6 +839,7 @@
             this.Text = "requirementsblock";
             this.Load += new System.EventHandler(this.Reqblock_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -971,10 +855,6 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1043,15 +923,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label25;
-        internal System.Windows.Forms.TextBox textBox17;
-        internal System.Windows.Forms.TextBox textBox16;
-        internal System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label28;
-        internal System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

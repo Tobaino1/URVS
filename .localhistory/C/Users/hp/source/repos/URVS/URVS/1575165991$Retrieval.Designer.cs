@@ -43,11 +43,7 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +58,8 @@
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -207,8 +205,6 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column18,
-            this.Column19,
-            this.Column20,
             this.Column4,
             this.Column5,
             this.Column6,
@@ -229,42 +225,10 @@
             this.dataGridView2.TabIndex = 47;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(76, 558);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 33);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "DASHBOARD";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(366, 575);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(545, 16);
-            this.label16.TabIndex = 49;
-            this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
-    "ed 2019";
-            // 
             // Column18
             // 
             this.Column18.HeaderText = "Date";
             this.Column18.Name = "Column18";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Accessibility";
-            this.Column19.Name = "Column19";
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "Availability";
-            this.Column20.Name = "Column20";
             // 
             // Column4
             // 
@@ -342,6 +306,28 @@
             this.Column17.HeaderText = "Application Type";
             this.Column17.Name = "Column17";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(76, 558);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 33);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "DASHBOARD";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DarkRed;
+            this.label16.Location = new System.Drawing.Point(366, 575);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(545, 16);
+            this.label16.TabIndex = 49;
+            this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
+    "ed 2019";
+            // 
             // Retrieval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,8 +378,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;

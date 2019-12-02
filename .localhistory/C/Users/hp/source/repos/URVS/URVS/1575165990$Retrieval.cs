@@ -30,7 +30,10 @@ namespace URVS
                 dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
                 //dataGridView1.Rows[n].Cells[3].Value = item["id"].ToString();
 
-               
+                //}
+
+                //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=urvs");
+                //conn.Open();
 
                 MySqlDataAdapter xda = new MySqlDataAdapter("select * from requirements ", con);
                 DataTable xd = new DataTable();
@@ -53,8 +56,8 @@ namespace URVS
                     dataGridView2.Rows[m].Cells[12].Value = tem["prog_lang"].ToString();
                     dataGridView2.Rows[m].Cells[13].Value = tem["db"].ToString();
                     dataGridView2.Rows[m].Cells[14].Value = tem["app_type"].ToString();
-                    dataGridView2.Rows[m].Cells[15].Value = tem["accessibility"].ToString();
-                    dataGridView2.Rows[m].Cells[16].Value = tem["availability"].ToString();
+                    //dataGridView2.Rows[m].Cells[15].Value = tem["accessibility"].ToString();
+                    //dataGridView2.Rows[m].Cells[16].Value = tem["availability"].ToString();
                     ////dataGridView2.Rows[m].Cells[17].Value = tem["id"].ToString();
 
                 }

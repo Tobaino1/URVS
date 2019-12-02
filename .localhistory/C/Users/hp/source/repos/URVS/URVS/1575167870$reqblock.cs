@@ -51,36 +51,22 @@ namespace URVS
             double.TryParse(textBox7.Text, out probable_cost);
             double.TryParse(textBox12.Text, out effort);
 
-            result = probable_cost / (effort * timeline * 500);
+            result = probable_cost / (effort * timeline * 1000000);
             textBox13.Text = result.ToString();
 
             //--------------------Applying Bayes Theorem to validate ---------------------//
-
-            // P(A|B) = P(B|A) * P(A) / P(B) 
-
             //P(A|B) Posterior --validation based on the probability that user gave right requirements (specifications) and developer adhere to it
             // **
-            //P(B|A) Likelihood -- validation based on the probability that developer complied given that the user gave right requirements
+            //p(B|A) Likelihood -- validation based on the probability that developer complied given that the user gave right requirements
             //**
             //P(A) -- validation based on probability of the hypothesis without any prior information || user gave a requirement
             //**
             //P(B)  -- Validation based on probability by observing evidence from the likelihood || developer developed the system
 
+            
 
-            double likelihood; //P(B|A)
-            double P_A ;   //user gave a requirement
-            double P_B ;    // developer developed the system
-            double result1;
+                string validation_report = string.Empty;
 
-            double.TryParse(textBox15.Text, out likelihood);
-            double.TryParse(textBox16.Text, out P_A);
-            double.TryParse(textBox17.Text, out P_B);
-
-            result1 = likelihood * P_A / P_B;
-            textBox18.Text = result1.ToString();
-
-
-            string validation_report = string.Empty; 
                 validation_report = " POSTERIOR P(A|B) OR P(A) = Validation based on the probability that User gave right requirements (specifications) OR requirements on hypothesis without prior information  && LIKELIHOOD P(B|A) OR P(B)  Validation based on the probability that developer complied and developed OR development based on the probability of observing evidence from the likelihood";
                 textBox14.Text = validation_report.ToString();
  
@@ -166,9 +152,9 @@ namespace URVS
             con.Open();
             MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + listBox1 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + listBox2 + "', '" + listBox3 + "', '" + listBox4 + "'  )", con);
             cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
-            //cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
-            //cmd.Parameters.Add("listBox3", MySqlDbType.VarChar, 255);
-            //cmd.Parameters.Add("listBox4", MySqlDbType.VarChar, 255);
+            cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
+            cmd.Parameters.Add("listBox3", MySqlDbType.VarChar, 255);
+            cmd.Parameters.Add("listBox4", MySqlDbType.VarChar, 255);
 
             foreach (string item in listBox1.Items)
             {
@@ -176,24 +162,24 @@ namespace URVS
                 cmd.ExecuteNonQuery();
 
             }
-            //foreach (string item in listBox2.Items)
-            //{
-            //    cmd.Parameters["listbox2"].Value = item;
-            //    cmd.ExecuteNonQuery();
+            foreach (string item in listBox2.Items)
+            {
+                cmd.Parameters["listbox2"].Value = item;
+                cmd.ExecuteNonQuery();
 
-            //}
-            //foreach (string item in listBox3.Items)
-            //{
-            //    cmd.Parameters["listbox3"].Value = item;
-            //    cmd.ExecuteNonQuery();
+            }
+            foreach (string item in listBox3.Items)
+            {
+                cmd.Parameters["listbox3"].Value = item;
+                cmd.ExecuteNonQuery();
 
-            //}
-            //foreach (string item in listBox4.Items)
-            //{
-            //    cmd.Parameters["listbox4"].Value = item;
-            //    cmd.ExecuteNonQuery();
+            }
+            foreach (string item in listBox4.Items)
+            {
+                cmd.Parameters["listbox4"].Value = item;
+                cmd.ExecuteNonQuery();
 
-            //}
+            }
             cmd.ExecuteNonQuery();
             MessageBox.Show("Requirements has been succesfully inserted in the database, click refresh button");
             con.Close();
@@ -283,21 +269,6 @@ namespace URVS
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
         {
 
         }

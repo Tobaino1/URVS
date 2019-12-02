@@ -76,7 +76,7 @@ namespace URVS
             double.TryParse(textBox16.Text, out P_A);
             double.TryParse(textBox17.Text, out P_B);
 
-            result1 = likelihood * P_A / P_B;
+            result1 = (likelihood * P_A) / P_B;
             textBox18.Text = result1.ToString();
 
 
@@ -293,11 +293,6 @@ namespace URVS
         }
 
         private void label28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
         {
 
         }

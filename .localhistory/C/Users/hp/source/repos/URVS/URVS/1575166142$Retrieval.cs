@@ -30,7 +30,10 @@ namespace URVS
                 dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
                 //dataGridView1.Rows[n].Cells[3].Value = item["id"].ToString();
 
-               
+                //}
+
+                //MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=urvs");
+                //conn.Open();
 
                 MySqlDataAdapter xda = new MySqlDataAdapter("select * from requirements ", con);
                 DataTable xd = new DataTable();
