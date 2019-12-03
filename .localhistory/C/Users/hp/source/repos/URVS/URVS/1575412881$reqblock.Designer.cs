@@ -374,9 +374,9 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(586, 449);
+            this.button8.Location = new System.Drawing.Point(586, 471);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(215, 65);
+            this.button8.Size = new System.Drawing.Size(199, 43);
             this.button8.TabIndex = 48;
             this.button8.Text = "HELP ON NaN";
             this.button8.UseVisualStyleBackColor = false;
@@ -385,11 +385,11 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(586, 580);
+            this.button7.Location = new System.Drawing.Point(586, 569);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(215, 87);
+            this.button7.Size = new System.Drawing.Size(199, 43);
             this.button7.TabIndex = 47;
-            this.button7.Text = "SAVE REPORT, CURATED VALIDATION OUTCOME && PROBBLE  QUALITY ASSURANCE";
+            this.button7.Text = "SAVE REPORTS && PROBBLE  QUALITY ASSURANCE";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -398,7 +398,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.button1.Location = new System.Drawing.Point(586, 520);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 54);
+            this.button1.Size = new System.Drawing.Size(199, 43);
             this.button1.TabIndex = 41;
             this.button1.Text = "GENERATE REPORTS";
             this.button1.UseVisualStyleBackColor = false;

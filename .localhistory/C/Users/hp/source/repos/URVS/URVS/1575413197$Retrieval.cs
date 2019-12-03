@@ -28,7 +28,7 @@ namespace URVS
                 dataGridView1.Rows[n].Cells[0].Value = item["submit"].ToString();
                 dataGridView1.Rows[n].Cells[1].Value = item["prob_qua_ass"].ToString();
                 dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
-                dataGridView1.Rows[n].Cells[3].Value = item["curated_vo"].ToString();
+                //dataGridView1.Rows[n].Cells[3].Value = item["id"].ToString();
 
                
 
@@ -55,10 +55,7 @@ namespace URVS
                     dataGridView2.Rows[m].Cells[14].Value = tem["app_type"].ToString();
                     dataGridView2.Rows[m].Cells[15].Value = tem["accessibility"].ToString();
                     dataGridView2.Rows[m].Cells[16].Value = tem["availability"].ToString();
-                    dataGridView2.Rows[m].Cells[17].Value = tem["likelihood"].ToString();
-                    dataGridView2.Rows[m].Cells[17].Value = tem["p_a"].ToString();
-                    dataGridView2.Rows[m].Cells[17].Value = tem["p_b"].ToString();
-
+                    ////dataGridView2.Rows[m].Cells[17].Value = tem["id"].ToString();
 
                 }
             }
@@ -81,7 +78,12 @@ namespace URVS
             myform.Show();
         }
 
-      
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Report_req myform = new Report_req();
+            this.Hide();
+            myform.Show();
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

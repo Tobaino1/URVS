@@ -162,38 +162,38 @@ namespace URVS
                 return;
 
             }
-
-            if (textBox15.Text == string.Empty)
-            {
-                MessageBox.Show("parameter can't be empty, please enter a value!");
-                return;
-
-            }
-            if (textBox16.Text == string.Empty)
-            {
-                MessageBox.Show("parameter can't be empty, please enter a value!");
-                return;
-
-            }
-            if (textBox17.Text == string.Empty)
-            {
-                MessageBox.Show("parameter can't be empty, please enter a value!");
-                return;
-
-            }
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`, `likelihood`, `p_a`, `p_b`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + textBox19 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox20 + "', '" + textBox21 + "', '" + textBox22 + "', '" + textBox15 + "', '" + textBox16 + "', '" + textBox17 + "'  )", con);
-           
-            //cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
-            
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + textBox19 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox20 + "', '" + textBox21 + "', '" + textBox22 + "'  )", con);
+            cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
+            //cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
+            //cmd.Parameters.Add("listBox3", MySqlDbType.VarChar, 255);
+            //cmd.Parameters.Add("listBox4", MySqlDbType.VarChar, 255);
+
             //foreach (string item in listBox1.Items)
             //{
             //    cmd.Parameters["listbox1"].Value = item;
             //    cmd.ExecuteNonQuery();
 
             //}
-          
+            //foreach (string item in listBox2.Items)
+            //{
+            //    cmd.Parameters["listbox2"].Value = item;
+            //    cmd.ExecuteNonQuery();
+
+            //}
+            //foreach (string item in listBox3.Items)
+            //{
+            //    cmd.Parameters["listbox3"].Value = item;
+            //    cmd.ExecuteNonQuery();
+
+            //}
+            //foreach (string item in listBox4.Items)
+            //{
+            //    cmd.Parameters["listbox4"].Value = item;
+            //    cmd.ExecuteNonQuery();
+
+            //}
             cmd.ExecuteNonQuery();
             MessageBox.Show("Requirements has been succesfully inserted in the database, click refresh button");
             con.Close();
@@ -267,7 +267,7 @@ namespace URVS
            
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO reports (`prob_qua_ass`, `ass_val_rep`, `curated_vo` ) VALUES ('" + textBox13.Text + "','" + textBox14.Text + "', '" + textBox18.Text + "' )", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO reports (`prob_qua_ass`, `ass_val_rep`) VALUES ('" + textBox13.Text + "','" + textBox14.Text + "')", con);
                         
             cmd.ExecuteNonQuery();
             MessageBox.Show("Generated Reports has been succesfully saved in the database, click refresh button");

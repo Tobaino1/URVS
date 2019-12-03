@@ -267,7 +267,7 @@ namespace URVS
            
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO reports (`prob_qua_ass`, `ass_val_rep`, `curated_vo` ) VALUES ('" + textBox13.Text + "','" + textBox14.Text + "', '" + textBox18.Text + "' )", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO reports (`prob_qua_ass`, `ass_val_rep`) VALUES ('" + textBox13.Text + "','" + textBox14.Text + "')", con);
                         
             cmd.ExecuteNonQuery();
             MessageBox.Show("Generated Reports has been succesfully saved in the database, click refresh button");
