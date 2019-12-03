@@ -60,6 +60,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -80,6 +83,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -96,10 +100,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -486,9 +486,9 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.OliveDrab;
-            this.groupBox5.Controls.Add(this.textBox20);
-            this.groupBox5.Controls.Add(this.textBox21);
-            this.groupBox5.Controls.Add(this.textBox22);
+            this.groupBox5.Controls.Add(this.listBox4);
+            this.groupBox5.Controls.Add(this.listBox3);
+            this.groupBox5.Controls.Add(this.listBox2);
             this.groupBox5.Controls.Add(this.textBox11);
             this.groupBox5.Controls.Add(this.textBox10);
             this.groupBox5.Controls.Add(this.textBox9);
@@ -510,6 +510,46 @@
             this.groupBox5.TabIndex = 40;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "SOFTWARE REQUIREMENTS SPECIFICATION (SRS)";
+            // 
+            // listBox4
+            // 
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.Items.AddRange(new object[] {
+            "24/7",
+            "WEEKLY",
+            "DAILY",
+            "MONTHLY",
+            "YEARLY"});
+            this.listBox4.Location = new System.Drawing.Point(174, 293);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(154, 30);
+            this.listBox4.TabIndex = 19;
+            // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.Items.AddRange(new object[] {
+            "OPEN-SOURCE",
+            "PAID",
+            "TRIAL"});
+            this.listBox3.Location = new System.Drawing.Point(174, 256);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(154, 30);
+            this.listBox3.TabIndex = 18;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Items.AddRange(new object[] {
+            "WEB",
+            "DESKTOP",
+            "CONSOLE",
+            "MOBILE",
+            "HYBRID"});
+            this.listBox2.Location = new System.Drawing.Point(174, 221);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(154, 30);
+            this.listBox2.TabIndex = 17;
             // 
             // textBox11
             // 
@@ -593,9 +633,9 @@
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(9, 303);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(253, 13);
+            this.label19.Size = new System.Drawing.Size(69, 13);
             this.label19.TabIndex = 8;
-            this.label19.Text = "Availability Eg 24/7, Daily, Weekly, Monthly";
+            this.label19.Text = "Availability";
             // 
             // textBox12
             // 
@@ -612,9 +652,9 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(9, 273);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(155, 13);
+            this.label12.Size = new System.Drawing.Size(76, 13);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Accessibility Eg Free, Paid";
+            this.label12.Text = "Accessibility";
             // 
             // label13
             // 
@@ -631,9 +671,9 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(9, 238);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(260, 13);
+            this.label14.Size = new System.Drawing.Size(115, 13);
             this.label14.TabIndex = 4;
-            this.label14.Text = "Type of Application Eg Web, Desktop, Mobile";
+            this.label14.Text = "Type of Application";
             // 
             // label15
             // 
@@ -681,9 +721,9 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.groupBox4.Controls.Add(this.textBox19);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Controls.Add(this.listBox1);
             this.groupBox4.Controls.Add(this.textBox5);
             this.groupBox4.Controls.Add(this.textBox7);
             this.groupBox4.Controls.Add(this.textBox8);
@@ -718,6 +758,28 @@
             this.textBox6.Size = new System.Drawing.Size(386, 66);
             this.textBox6.TabIndex = 11;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "AGRICULTURE",
+            "EDUCATION",
+            "HEALTH",
+            "BANKING",
+            "ICT",
+            "CONSULTING",
+            "ENGINEERING",
+            "AVIATION",
+            "ENTERTAINMENT",
+            "SPORTS",
+            "SECURITY",
+            "TOURISM",
+            "OTHERS"});
+            this.listBox1.Location = new System.Drawing.Point(253, 88);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(154, 30);
+            this.listBox1.TabIndex = 10;
+            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.White;
@@ -734,7 +796,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(95, 21);
             this.textBox7.TabIndex = 7;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
@@ -760,9 +821,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(11, 94);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(290, 13);
+            this.label8.Size = new System.Drawing.Size(169, 13);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Business Area of Application Eg Health, Education";
+            this.label8.Text = "Business Area of Application";
             // 
             // label9
             // 
@@ -881,38 +942,6 @@
             this.label16.Text = "Copyright Department of Computer Science, Lagos State University. Allright Reserv" +
     "ed 2019";
             // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.White;
-            this.textBox19.Location = new System.Drawing.Point(298, 86);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(109, 21);
-            this.textBox19.TabIndex = 13;
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.Color.White;
-            this.textBox20.Location = new System.Drawing.Point(291, 235);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(109, 21);
-            this.textBox20.TabIndex = 14;
-            // 
-            // textBox21
-            // 
-            this.textBox21.BackColor = System.Drawing.Color.White;
-            this.textBox21.Location = new System.Drawing.Point(291, 265);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(109, 21);
-            this.textBox21.TabIndex = 15;
-            // 
-            // textBox22
-            // 
-            this.textBox22.BackColor = System.Drawing.Color.White;
-            this.textBox22.Location = new System.Drawing.Point(291, 295);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(109, 21);
-            this.textBox22.TabIndex = 16;
-            // 
             // Reqblock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -991,6 +1020,7 @@
         internal System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox1;
         internal System.Windows.Forms.Label label17;
         internal System.Windows.Forms.TextBox textBox6;
         internal System.Windows.Forms.Label label23;
@@ -998,6 +1028,9 @@
         internal System.Windows.Forms.Label label21;
         internal System.Windows.Forms.Label label20;
         internal System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox2;
         internal System.Windows.Forms.TextBox textBox11;
         internal System.Windows.Forms.TextBox textBox10;
         internal System.Windows.Forms.TextBox textBox9;
@@ -1020,9 +1053,5 @@
         internal System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox2;
-        internal System.Windows.Forms.TextBox textBox20;
-        internal System.Windows.Forms.TextBox textBox21;
-        internal System.Windows.Forms.TextBox textBox22;
-        internal System.Windows.Forms.TextBox textBox19;
     }
 }

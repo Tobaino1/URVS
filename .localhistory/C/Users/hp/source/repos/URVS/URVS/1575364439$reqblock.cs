@@ -164,18 +164,18 @@ namespace URVS
             }
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + textBox19 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox20 + "', '" + textBox21 + "', '" + textBox22 + "'  )", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + listBox1 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + listBox2 + "', '" + listBox3 + "', '" + listBox4 + "'  )", con);
             cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
             //cmd.Parameters.Add("listBox2", MySqlDbType.VarChar, 255);
             //cmd.Parameters.Add("listBox3", MySqlDbType.VarChar, 255);
             //cmd.Parameters.Add("listBox4", MySqlDbType.VarChar, 255);
 
-            //foreach (string item in listBox1.Items)
-            //{
-            //    cmd.Parameters["listbox1"].Value = item;
-            //    cmd.ExecuteNonQuery();
+            foreach (string item in listBox1.Items)
+            {
+                cmd.Parameters["listbox1"].Value = item;
+                cmd.ExecuteNonQuery();
 
-            //}
+            }
             //foreach (string item in listBox2.Items)
             //{
             //    cmd.Parameters["listbox2"].Value = item;
@@ -243,10 +243,6 @@ namespace URVS
             textBox9.Text = "";
             textBox10.Text = "";
             textBox11.Text = "";
-            textBox19.Text = "";
-            textBox20.Text = "";
-            textBox21.Text = "";
-            textBox22.Text = "";
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -303,12 +299,6 @@ namespace URVS
 
         private void label25_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
 
         }
     }
