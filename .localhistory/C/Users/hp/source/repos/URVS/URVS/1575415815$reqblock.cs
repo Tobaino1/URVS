@@ -68,15 +68,15 @@ namespace URVS
 
 
             double likelihood; //P(B|A)
-            double p_a ;   //user gave a requirement
-            double p_b ;    // developer developed the system
+            double P_A ;   //user gave a requirement
+            double P_B ;    // developer developed the system
             double result1;
 
             double.TryParse(textBox15.Text, out likelihood);
-            double.TryParse(textBox16.Text, out p_a);
-            double.TryParse(textBox17.Text, out p_b);
+            double.TryParse(textBox16.Text, out P_A);
+            double.TryParse(textBox17.Text, out P_B);
 
-            result1 = likelihood * p_a / p_b;
+            result1 = likelihood * P_A / P_B;
             textBox18.Text = result1.ToString();
 
 
@@ -243,9 +243,6 @@ namespace URVS
             textBox9.Text = "";
             textBox10.Text = "";
             textBox11.Text = "";
-            textBox15.Text = "";
-            textBox16.Text = "";
-            textBox17.Text = "";
             textBox19.Text = "";
             textBox20.Text = "";
             textBox21.Text = "";

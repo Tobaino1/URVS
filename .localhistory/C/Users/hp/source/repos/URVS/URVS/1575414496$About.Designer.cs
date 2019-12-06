@@ -50,9 +50,9 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(12, 76);
+            this.label16.Location = new System.Drawing.Point(32, 46);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(1029, 304);
+            this.label16.Size = new System.Drawing.Size(804, 320);
             this.label16.TabIndex = 50;
             this.label16.Text = resources.GetString("label16.Text");
             this.label16.Click += new System.EventHandler(this.label16_Click);
@@ -74,17 +74,16 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(233, 444);
+            this.label2.Location = new System.Drawing.Point(329, 427);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(263, 48);
+            this.label2.Size = new System.Drawing.Size(241, 48);
             this.label2.TabIndex = 52;
-            this.label2.Text = "A study by : Tanimowo Stephen Seyon\r\n\r\nSupervised by: Dr. Moboluwaju Akinnuwesi";
+            this.label2.Text = "A study by : Tanimowo Stephen Seyon\r\n\r\nSupervisor: Dr. Moboluwaju Akinnuwesi";
             // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1066, 591);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

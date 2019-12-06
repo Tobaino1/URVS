@@ -243,9 +243,6 @@ namespace URVS
             textBox9.Text = "";
             textBox10.Text = "";
             textBox11.Text = "";
-            textBox15.Text = "";
-            textBox16.Text = "";
-            textBox17.Text = "";
             textBox19.Text = "";
             textBox20.Text = "";
             textBox21.Text = "";
