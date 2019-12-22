@@ -301,7 +301,7 @@
             // 
             this.Column9.HeaderText = "Business Area of the Application";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 250;
+            this.Column9.Width = 200;
             // 
             // Column10
             // 

@@ -60,7 +60,7 @@ namespace URVS
                     dataGridView2.Rows[m].Cells[19].Value = tem["p_b"].ToString();
 
 
-                }
+                //}
             }
         }
 

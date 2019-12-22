@@ -185,29 +185,25 @@ namespace URVS
             if (textBox19.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox20.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox21.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox22.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`, `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`, `likelihood`, `p_a`, `p_b`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + textBox19 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox20.Text + "', '" + textBox21.Text + "', '" + textBox22.Text + "', '" + textBox15.Text + "', '" + textBox16.Text + "', '" + textBox17.Text + "'  )", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO requirements (`client_name`, `app_name`, `user_spec`, `timeline`, `probable_cost`, `bus_area`,  `project_vision`, `prior_busprob`,  `dev_name`, `framework`, `resource_con`, `prog_lang`, `db`, `app_type`, `accessibility`, `availability`, `likelihood`, `p_a`, `p_b`) VALUES ('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "', '" + textBox8.Text + "','" + textBox7.Text + "', '" + textBox19 + "', '" + textBox5.Text + "','" + textBox6.Text + "', '" + textBox12.Text + "','" + textBox2.Text + "','" + textBox9.Text + "','" + textBox10.Text + "', '" + textBox11.Text + "', '" + textBox20 + "', '" + textBox21 + "', '" + textBox22 + "', '" + textBox15 + "', '" + textBox16 + "', '" + textBox17 + "'  )", con);
            
             //cmd.Parameters.Add("listBox1", MySqlDbType.VarChar, 255);
             

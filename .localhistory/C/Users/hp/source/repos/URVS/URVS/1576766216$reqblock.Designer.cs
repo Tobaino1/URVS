@@ -159,7 +159,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1292, 651);
+            this.groupBox1.Size = new System.Drawing.Size(1580, 678);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Requirements Block";
@@ -174,9 +174,9 @@
             this.groupBox6.Controls.Add(this.textBox16);
             this.groupBox6.Controls.Add(this.label26);
             this.groupBox6.Controls.Add(this.textBox17);
-            this.groupBox6.Location = new System.Drawing.Point(25, 428);
+            this.groupBox6.Location = new System.Drawing.Point(1293, 28);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(259, 198);
+            this.groupBox6.Size = new System.Drawing.Size(259, 383);
             this.groupBox6.TabIndex = 61;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Enter Actual / Assumed value for the following Parameters (click HELP button for " +
@@ -187,7 +187,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label25.Location = new System.Drawing.Point(21, 49);
+            this.label25.Location = new System.Drawing.Point(29, 100);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(79, 18);
             this.label25.TabIndex = 55;
@@ -197,7 +197,7 @@
             // textBox15
             // 
             this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.Location = new System.Drawing.Point(115, 49);
+            this.textBox15.Location = new System.Drawing.Point(123, 100);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(51, 25);
@@ -208,7 +208,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(21, 154);
+            this.label27.Location = new System.Drawing.Point(29, 205);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(41, 18);
             this.label27.TabIndex = 57;
@@ -217,7 +217,7 @@
             // textBox16
             // 
             this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.Location = new System.Drawing.Point(115, 99);
+            this.textBox16.Location = new System.Drawing.Point(123, 150);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(51, 25);
@@ -228,7 +228,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label26.Location = new System.Drawing.Point(21, 98);
+            this.label26.Location = new System.Drawing.Point(29, 149);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(41, 18);
             this.label26.TabIndex = 56;
@@ -237,7 +237,7 @@
             // textBox17
             // 
             this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.Location = new System.Drawing.Point(115, 147);
+            this.textBox17.Location = new System.Drawing.Point(123, 198);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(51, 25);
@@ -252,9 +252,9 @@
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Location = new System.Drawing.Point(827, 425);
+            this.groupBox2.Location = new System.Drawing.Point(810, 441);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(420, 203);
+            this.groupBox2.Size = new System.Drawing.Size(420, 231);
             this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RESULT SECTION";
@@ -262,7 +262,7 @@
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Location = new System.Drawing.Point(18, 83);
+            this.textBox14.Location = new System.Drawing.Point(18, 111);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(358, 115);
@@ -273,7 +273,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label28.Location = new System.Drawing.Point(15, 41);
+            this.label28.Location = new System.Drawing.Point(15, 54);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(240, 18);
             this.label28.TabIndex = 59;
@@ -283,7 +283,7 @@
             // textBox18
             // 
             this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.Location = new System.Drawing.Point(261, 41);
+            this.textBox18.Location = new System.Drawing.Point(261, 54);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(115, 25);
@@ -294,7 +294,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(15, 59);
+            this.label24.Location = new System.Drawing.Point(15, 87);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(182, 18);
             this.label24.TabIndex = 45;
@@ -329,7 +329,7 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button5.Location = new System.Drawing.Point(459, 540);
+            this.button5.Location = new System.Drawing.Point(441, 550);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(129, 46);
             this.button5.TabIndex = 50;
@@ -346,7 +346,7 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(324, 485);
+            this.button3.Location = new System.Drawing.Point(306, 495);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 46);
             this.button3.TabIndex = 13;
@@ -363,7 +363,7 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button6.Location = new System.Drawing.Point(459, 485);
+            this.button6.Location = new System.Drawing.Point(441, 495);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(129, 46);
             this.button6.TabIndex = 49;
@@ -374,7 +374,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button8.Location = new System.Drawing.Point(599, 415);
+            this.button8.Location = new System.Drawing.Point(586, 449);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(215, 65);
             this.button8.TabIndex = 48;
@@ -385,7 +385,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(599, 546);
+            this.button7.Location = new System.Drawing.Point(586, 580);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(215, 87);
             this.button7.TabIndex = 47;
@@ -396,7 +396,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(599, 486);
+            this.button1.Location = new System.Drawing.Point(586, 520);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(215, 54);
             this.button1.TabIndex = 41;
@@ -413,7 +413,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(324, 540);
+            this.button2.Location = new System.Drawing.Point(306, 550);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 47);
             this.button2.TabIndex = 16;
@@ -906,7 +906,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(363, 701);
+            this.label16.Location = new System.Drawing.Point(363, 724);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(545, 16);
             this.label16.TabIndex = 41;
@@ -918,7 +918,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1329, 720);
+            this.ClientSize = new System.Drawing.Size(1604, 749);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);

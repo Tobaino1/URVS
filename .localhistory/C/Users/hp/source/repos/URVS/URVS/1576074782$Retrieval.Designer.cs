@@ -47,22 +47,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -217,22 +217,22 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column18,
+            this.Column19,
+            this.Column20,
             this.Column4,
             this.Column5,
             this.Column6,
             this.Column7,
+            this.Column10,
             this.Column8,
             this.Column9,
-            this.Column10,
             this.Column11,
             this.Column12,
             this.Column13,
-            this.Column14,
             this.Column15,
+            this.Column14,
             this.Column16,
             this.Column17,
-            this.Column19,
-            this.Column20,
             this.Column21,
             this.Column22,
             this.Column23});
@@ -269,6 +269,16 @@
             this.Column18.HeaderText = "Date";
             this.Column18.Name = "Column18";
             // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "Accessibility";
+            this.Column19.Name = "Column19";
+            // 
+            // Column20
+            // 
+            this.Column20.HeaderText = "Availability";
+            this.Column20.Name = "Column20";
+            // 
             // Column4
             // 
             this.Column4.HeaderText = "Client Name";
@@ -292,6 +302,12 @@
             this.Column7.HeaderText = "Timeline";
             this.Column7.Name = "Column7";
             // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Business needs (projected vision)";
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 400;
+            // 
             // Column8
             // 
             this.Column8.HeaderText = "Probable Cost";
@@ -301,13 +317,7 @@
             // 
             this.Column9.HeaderText = "Business Area of the Application";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 250;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Business needs (projected vision)";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 400;
+            this.Column9.Width = 200;
             // 
             // Column11
             // 
@@ -325,15 +335,15 @@
             this.Column13.HeaderText = "Framework";
             this.Column13.Name = "Column13";
             // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Resource Constraints";
-            this.Column14.Name = "Column14";
-            // 
             // Column15
             // 
             this.Column15.HeaderText = "Programming Language(s)";
             this.Column15.Name = "Column15";
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "Resource Constraints";
+            this.Column14.Name = "Column14";
             // 
             // Column16
             // 
@@ -344,16 +354,6 @@
             // 
             this.Column17.HeaderText = "Application Type";
             this.Column17.Name = "Column17";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Accessibility";
-            this.Column19.Name = "Column19";
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "Availability";
-            this.Column20.Name = "Column20";
             // 
             // Column21
             // 
@@ -421,22 +421,22 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;

@@ -19,18 +19,18 @@ namespace URVS
 
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
-            MySqlDataAdapter sda = new MySqlDataAdapter("select * from reports ", con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            foreach (DataRow item in dt.Rows)
-            {
-                int n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = item["submit"].ToString();
-                dataGridView1.Rows[n].Cells[1].Value = item["prob_qua_ass"].ToString();
-                dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
-                dataGridView1.Rows[n].Cells[3].Value = item["curated_vo"].ToString();
+            //MySqlDataAdapter sda = new MySqlDataAdapter("select * from reports ", con);
+            //DataTable dt = new DataTable();
+            //sda.Fill(dt);
+            //foreach (DataRow item in dt.Rows)
+            //{
+            //    int n = dataGridView1.Rows.Add();
+            //    dataGridView1.Rows[n].Cells[0].Value = item["submit"].ToString();
+            //    dataGridView1.Rows[n].Cells[1].Value = item["prob_qua_ass"].ToString();
+            //    dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
+            //    dataGridView1.Rows[n].Cells[3].Value = item["curated_vo"].ToString();
 
-
+               
 
                 MySqlDataAdapter xda = new MySqlDataAdapter("select * from requirements ", con);
                 DataTable xd = new DataTable();

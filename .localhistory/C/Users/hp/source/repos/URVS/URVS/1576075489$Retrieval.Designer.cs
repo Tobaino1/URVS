@@ -51,6 +51,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +62,6 @@
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -221,6 +221,7 @@
             this.Column5,
             this.Column6,
             this.Column7,
+            this.Column19,
             this.Column8,
             this.Column9,
             this.Column10,
@@ -231,7 +232,6 @@
             this.Column15,
             this.Column16,
             this.Column17,
-            this.Column19,
             this.Column20,
             this.Column21,
             this.Column22,
@@ -292,6 +292,11 @@
             this.Column7.HeaderText = "Timeline";
             this.Column7.Name = "Column7";
             // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "Accessibility";
+            this.Column19.Name = "Column19";
+            // 
             // Column8
             // 
             this.Column8.HeaderText = "Probable Cost";
@@ -301,7 +306,7 @@
             // 
             this.Column9.HeaderText = "Business Area of the Application";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 250;
+            this.Column9.Width = 200;
             // 
             // Column10
             // 
@@ -344,11 +349,6 @@
             // 
             this.Column17.HeaderText = "Application Type";
             this.Column17.Name = "Column17";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Accessibility";
-            this.Column19.Name = "Column19";
             // 
             // Column20
             // 
@@ -425,6 +425,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
@@ -435,7 +436,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;

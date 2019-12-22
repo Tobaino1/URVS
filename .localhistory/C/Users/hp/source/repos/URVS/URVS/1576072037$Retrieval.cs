@@ -30,7 +30,7 @@ namespace URVS
                 dataGridView1.Rows[n].Cells[2].Value = item["ass_val_rep"].ToString();
                 dataGridView1.Rows[n].Cells[3].Value = item["curated_vo"].ToString();
 
-
+               
 
                 MySqlDataAdapter xda = new MySqlDataAdapter("select * from requirements ", con);
                 DataTable xd = new DataTable();

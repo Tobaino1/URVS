@@ -185,25 +185,21 @@ namespace URVS
             if (textBox19.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox20.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox21.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
 
             if (textBox22.Text == string.Empty)
             {
                 MessageBox.Show("field can't be empty, please enter a value");
-                return;
             }
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();

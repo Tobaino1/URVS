@@ -42,11 +42,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,11 +62,10 @@
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -207,16 +207,13 @@
             this.Column2.Name = "Column2";
             this.Column2.Width = 500;
             // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Curated validation outcome";
-            this.Column24.Name = "Column24";
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column18,
+            this.Column19,
+            this.Column20,
             this.Column4,
             this.Column5,
             this.Column6,
@@ -231,8 +228,6 @@
             this.Column15,
             this.Column16,
             this.Column17,
-            this.Column19,
-            this.Column20,
             this.Column21,
             this.Column22,
             this.Column23});
@@ -269,6 +264,16 @@
             this.Column18.HeaderText = "Date";
             this.Column18.Name = "Column18";
             // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "Accessibility";
+            this.Column19.Name = "Column19";
+            // 
+            // Column20
+            // 
+            this.Column20.HeaderText = "Availability";
+            this.Column20.Name = "Column20";
+            // 
             // Column4
             // 
             this.Column4.HeaderText = "Client Name";
@@ -301,7 +306,7 @@
             // 
             this.Column9.HeaderText = "Business Area of the Application";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 250;
+            this.Column9.Width = 200;
             // 
             // Column10
             // 
@@ -345,16 +350,6 @@
             this.Column17.HeaderText = "Application Type";
             this.Column17.Name = "Column17";
             // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Accessibility";
-            this.Column19.Name = "Column19";
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "Availability";
-            this.Column20.Name = "Column20";
-            // 
             // Column21
             // 
             this.Column21.HeaderText = "Likelihood";
@@ -369,6 +364,11 @@
             // 
             this.Column23.HeaderText = "P(B)";
             this.Column23.Name = "Column23";
+            // 
+            // Column24
+            // 
+            this.Column24.HeaderText = "Curated validation outcome";
+            this.Column24.Name = "Column24";
             // 
             // Retrieval
             // 
@@ -421,6 +421,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
@@ -435,8 +437,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
