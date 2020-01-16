@@ -17,8 +17,7 @@ namespace URVS
         {
             InitializeComponent();
 
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;password=vetrigo;database=urvs");
-            //MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=urvs");
             con.Open();
             MySqlDataAdapter sda = new MySqlDataAdapter("select * from reports ", con);
             DataTable dt = new DataTable();
